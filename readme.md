@@ -13,6 +13,9 @@
 O enunciado original do desafio pode ser encontrado aqui:
 [**Desafio de Cálculo de CDB (PDF)**](./Pdf/DesafioCDB.pdf)
 
+## ✨ O frontend (Angular) do projeto se encontra 
+
+[https://github.com/marcelogmoura/DesafioCDB_front](https://github.com/marcelogmoura/DesafioCDB_front)
 ---
 
 ## ✨ Objetivo do Desafio
@@ -117,9 +120,9 @@ A solução utiliza **Docker Compose** para orquestrar a Web API (.NET) e o Fron
 
 As telas abaixo demonstram os request e response no swagger.
 
-![Demonstração do Cálculo de CDB](https://i.postimg.cc/qqn9dgXs/Screenshot-11.jpg)
+![Request](https://i.postimg.cc/WpnG5sPy/Screenshot-10.jpg)
 
-![Demonstração do Cálculo de CDB](https://i.postimg.cc/qqn9dgXs/Screenshot-11.jpg)
+![Response](https://i.postimg.cc/qqn9dgXs/Screenshot-11.jpg)
 
 ---
 
