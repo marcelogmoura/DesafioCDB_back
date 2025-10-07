@@ -1,0 +1,27 @@
+services:
+  api:
+    build:
+      context: . 
+      dockerfile: DesafioCDB.API/Dockerfile 
+    container_name: cdb-api    
+    ports:
+      - "5140:8080" 
+    environment:      
+      - ASPNETCORE_URLS=http://+:8080
+    networks:
+      - cdb-network  
+  web:
+    build:
+      context: .
+      dockerfile: DesafioCDB.Web/Dockerfile 
+    container_name: cdb-web    
+    ports:
+      - "80:80"
+    depends_on:
+      - api 
+    networks:
+      - cdb-network
+    
+networks:  
+  cdb-network:
+    driver: bridge
