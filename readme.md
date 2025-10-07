@@ -111,6 +111,23 @@ A solução utiliza **Docker Compose** para orquestrar a Web API (.NET) e o Fron
 
 ---
 
+---
+
+## 🖼️ Demonstração Visual (Frontend Angular)
+
+As telas abaixo demonstram os request e response no swagger.
+
+![Demonstração do Cálculo de CDB](https://i.postimg.cc/qqn9dgXs/Screenshot-11.jpg)
+
+![Demonstração do Cálculo de CDB](https://i.postimg.cc/qqn9dgXs/Screenshot-11.jpg)
+
+---
+
+
+
+
+
+
 ## ⚖️ Licença
 
 Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
