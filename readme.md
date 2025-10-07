@@ -27,9 +27,9 @@ O sistema implementa uma solução completa para o cálculo do **Certificado de 
 
 | Categoria | Tecnologia | Versão/Framework |
 | :--- | :--- | :--- |
-| **Backend** | **ASP.NET Core** | 9.0 (ou a versão que você usou) |
-| **Linguagem** | **C#** | 12.0 (ou a versão que você usou) |
-| **Frontend** | **Angular** | 17+ (ou a versão que você usou) |
+| **Backend** | **ASP.NET Core** | 9.0 |
+| **Linguagem** | **C#** | 12.0 |
+| **Frontend** | **Angular** | 19+ |
 | **Testes** | **xUnit** | - |
 | **Containerização** | **Docker** e **Docker Compose** | - |
 | **Padrões** | **SOLID**, **Clean Architecture** (adaptada), **DTOs** | - |
