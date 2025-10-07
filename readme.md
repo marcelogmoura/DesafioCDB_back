@@ -114,9 +114,7 @@ A solução utiliza **Docker Compose** para orquestrar a Web API (.NET) e o Fron
 
 ---
 
----
-
-## 🖼️ Demonstração Visual (Frontend Angular)
+## 🖼️ Demonstração Visual (Swagger)
 
 As telas abaixo demonstram os request e response no swagger.
 
@@ -125,10 +123,6 @@ As telas abaixo demonstram os request e response no swagger.
 ![Response](https://i.postimg.cc/qqn9dgXs/Screenshot-11.jpg)
 
 ---
-
-
-
-
 
 
 ## ⚖️ Licença
