@@ -1,4 +1,4 @@
-# Desafio Técnico - CDB
+# Desafio TÃ©cnico - CDB
 
 ![.NET](https://img.shields.io/badge/.NET-9.0-blueviolet)
 ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat&logo=csharp&logoColor=white)
@@ -9,101 +9,101 @@
 
 ---
 
-## ?? Documentação
+## ğŸ“œ DocumentaÃ§Ã£o
 O enunciado original do desafio pode ser encontrado aqui:
-[**Desafio de Cálculo de CDB (PDF)**](./Pdf/DesafioCDB.pdf)
+[**Desafio de CÃ¡lculo de CDB (PDF)**](./Pdf/DesafioCDB.pdf)
 
 ---
 
-## ? Objetivo do Desafio
+## âœ¨ Objetivo do Desafio
 
-Este projeto foi desenvolvido como parte de um **teste de avaliação para desenvolvedor**, focado na aplicação dos princípios **SOLID**, **Testes Unitários** (com cobertura **> 90%** na camada de negócio), **boas práticas de codificação** e **containerização** com **Docker**.
+Este projeto foi desenvolvido como parte de um **teste de avaliaÃ§Ã£o para desenvolvedor**, focado na aplicaÃ§Ã£o dos princÃ­pios **SOLID**, **Testes UnitÃ¡rios** (com cobertura **> 90%** na camada de negÃ³cio), **boas prÃ¡ticas de codificaÃ§Ã£o** e **containerizaÃ§Ã£o** com **Docker**.
 
-O sistema implementa uma solução completa para o cálculo do **Certificado de Depósito Bancário (CDB)**, incluindo uma Web API (.NET Core) para a lógica e um frontend (Angular) para interação, garantindo qualidade de código e testes robustos.
+O sistema implementa uma soluÃ§Ã£o completa para o cÃ¡lculo do **Certificado de DepÃ³sito BancÃ¡rio (CDB)**, incluindo uma Web API (.NET Core) para a lÃ³gica e um frontend (Angular) para interaÃ§Ã£o, garantindo qualidade de cÃ³digo e testes robustos.
 
 ---
 
-## ??? Tecnologias Utilizadas
+## ğŸ› ï¸ Tecnologias Utilizadas
 
-| Categoria | Tecnologia | Versão/Framework |
+| Categoria | Tecnologia | VersÃ£o/Framework |
 | :--- | :--- | :--- |
-| **Backend** | **ASP.NET Core** | 9.0 (ou a versão que você usou) |
-| **Linguagem** | **C#** | 12.0 (ou a versão que você usou) |
-| **Frontend** | **Angular** | 17+ (ou a versão que você usou) |
+| **Backend** | **ASP.NET Core** | 9.0 (ou a versÃ£o que vocÃª usou) |
+| **Linguagem** | **C#** | 12.0 (ou a versÃ£o que vocÃª usou) |
+| **Frontend** | **Angular** | 17+ (ou a versÃ£o que vocÃª usou) |
 | **Testes** | **xUnit** | - |
-| **Containerização** | **Docker** e **Docker Compose** | - |
-| **Padrões** | **SOLID**, **Clean Architecture** (adaptada), **DTOs** | - |
+| **ContainerizaÃ§Ã£o** | **Docker** e **Docker Compose** | - |
+| **PadrÃµes** | **SOLID**, **Clean Architecture** (adaptada), **DTOs** | - |
 
 ---
 
-## ??? Arquitetura da Solução
+## ğŸ—ï¸ Arquitetura da SoluÃ§Ã£o
 
-A API segue um padrão de arquitetura em camadas para garantir a **separação de responsabilidades** e aderência aos princípios **SOLID**.
+A API segue um padrÃ£o de arquitetura em camadas para garantir a **separaÃ§Ã£o de responsabilidades** e aderÃªncia aos princÃ­pios **SOLID**.
 
 | Camada | Projeto | Responsabilidade Principal |
 | :--- | :--- | :--- |
-| **Application** | `DesafioCDB.API` | Ponto de entrada (Controller), configuração de injeção de dependência e *CORS*. |
-| **Domain** | `DesafioCDB.Domain` | Contém a regra de negócio (`CdbService`), DTOs e Interfaces. **É a camada principal de lógica de negócio testada.** |
-| **Tests** | `DesafioCDB.Tests` | Testes unitários utilizando **xUnit** com alta cobertura na camada de *Domain*. |
-| **Frontend** | `DesafioCDB.Web` | Interface de usuário desenvolvida em **Angular CLI** para consumir a API. |
+| **Application** | `DesafioCDB.API` | Ponto de entrada (Controller), configuraÃ§Ã£o de injeÃ§Ã£o de dependÃªncia e *CORS*. |
+| **Domain** | `DesafioCDB.Domain` | ContÃ©m a regra de negÃ³cio (`CdbService`), DTOs e Interfaces. **Ã‰ a camada principal de lÃ³gica de negÃ³cio testada.** |
+| **Tests** | `DesafioCDB.Tests` | Testes unitÃ¡rios utilizando **xUnit** com alta cobertura na camada de *Domain*. |
+| **Frontend** | `DesafioCDB.Web` | Interface de usuÃ¡rio desenvolvida em **Angular CLI** para consumir a API. |
 
 ---
 
-## ?? Regra de Negócio (Cálculo do CDB)
+## ğŸ’¼ Regra de NegÃ³cio (CÃ¡lculo do CDB)
 
-O cálculo do rendimento do CDB segue uma lógica básica de juros compostos, aplicando as alíquotas de Imposto de Renda (IR) regressivas, baseadas no tempo de permanência do investimento.
+O cÃ¡lculo do rendimento do CDB segue uma lÃ³gica bÃ¡sica de juros compostos, aplicando as alÃ­quotas de Imposto de Renda (IR) regressivas, baseadas no tempo de permanÃªncia do investimento.
 
-**A lógica aplicada é:**
+**A lÃ³gica aplicada Ã©:**
 
-1.  **Cálculo do Rendimento Bruto:** Juros Compostos sobre o valor inicial.
-2.  **Aplicação do IR (Alíquotas Regressivas):** O IR é aplicado sobre o *lucro* (rendimento bruto - valor inicial), conforme a tabela:
-    | Prazo | Alíquota de IR |
+1.  **CÃ¡lculo do Rendimento Bruto:** Juros Compostos sobre o valor inicial.
+2.  **AplicaÃ§Ã£o do IR (AlÃ­quotas Regressivas):** O IR Ã© aplicado sobre o *lucro* (rendimento bruto - valor inicial), conforme a tabela:
+    | Prazo | AlÃ­quota de IR |
     | :--- | :--- |
-    | Até 180 dias | 22.5% |
+    | AtÃ© 180 dias | 22.5% |
     | De 181 a 360 dias | 20.0% |
     | De 361 a 720 dias | 17.5% |
     | Acima de 720 dias | 15.0% |
 
 ---
 
-## ?? Endpoints da API
+## ğŸ”— Endpoints da API
 
-A API expõe um único endpoint para o cálculo, que recebe o valor de investimento e a quantidade de meses.
+A API expÃµe um Ãºnico endpoint para o cÃ¡lculo, que recebe o valor de investimento e a quantidade de meses.
 
-| Método | Endpoint | Descrição | Parâmetros (JSON Body) |
+| MÃ©todo | Endpoint | DescriÃ§Ã£o | ParÃ¢metros (JSON Body) |
 | :--- | :--- | :--- | :--- |
-| `POST` | `/api/cdb` | Calcula o rendimento do CDB (Bruto e Líquido) com base no valor e no prazo. | `{ "valorInicial": 1000.0, "prazoMeses": 12 }` |
+| `POST` | `/api/cdb` | Calcula o rendimento do CDB (Bruto e LÃ­quido) com base no valor e no prazo. | `{ "valorInicial": 1000.0, "prazoMeses": 12 }` |
 
 ---
 
-## ?? Como Executar a Solução (Containerização)
+## ğŸš€ Como Executar a SoluÃ§Ã£o (ContainerizaÃ§Ã£o)
 
-A solução utiliza **Docker Compose** para orquestrar a Web API (.NET) e o Frontend (Angular/Nginx), facilitando a execução em qualquer ambiente.
+A soluÃ§Ã£o utiliza **Docker Compose** para orquestrar a Web API (.NET) e o Frontend (Angular/Nginx), facilitando a execuÃ§Ã£o em qualquer ambiente.
 
-### Pré-requisitos
+### PrÃ©-requisitos
 
-* **Docker Desktop** instalado e em execução.
+* **Docker Desktop** instalado e em execuÃ§Ã£o.
 
-### Instruções
+### InstruÃ§Ãµes
 
-1.  **Navegue até o Diretório Raiz:** Abra o terminal na raiz da solução (onde o arquivo `docker-compose.yml` está localizado).
+1.  **Navegue atÃ© o DiretÃ³rio Raiz:** Abra o terminal na raiz da soluÃ§Ã£o (onde o arquivo `docker-compose.yml` estÃ¡ localizado).
 
 2.  **Construa e Suba os Containers:**
-    Execute o comando para construir as imagens e iniciar os serviços em modo *detached*:
+    Execute o comando para construir as imagens e iniciar os serviÃ§os em modo *detached*:
 
     ```bash
     docker compose up --build -d
     ```
 
-3.  **Acesse a Aplicação:**
-    Após a inicialização (pode levar alguns segundos), acesse o Frontend no seu navegador:
+3.  **Acesse a AplicaÃ§Ã£o:**
+    ApÃ³s a inicializaÃ§Ã£o (pode levar alguns segundos), acesse o Frontend no seu navegador:
 
     ```
     http://localhost:80
     ```
 
 4.  **Parar e Remover Containers:**
-    Para encerrar a execução e remover os containers e redes:
+    Para encerrar a execuÃ§Ã£o e remover os containers e redes:
 
     ```bash
     docker compose down
@@ -111,16 +111,16 @@ A solução utiliza **Docker Compose** para orquestrar a Web API (.NET) e o Fronte
 
 ---
 
-## ?? Licença
+## âš–ï¸ LicenÃ§a
 
-Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto estÃ¡ sob a licenÃ§a **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-## ????? Autor
+## ğŸ‘¨â€ğŸ’» Autor
 
 **Marcelo Moura**
 
-* ?? **Email:** [mgmoura@gmail.com](mailto:mgmoura@gmail.com) | [admin@allriders.com.br](mailto:admin@allriders.com.br)
-* ?? **GitHub:** [github.com/marcelogmoura](https://github.com/marcelogmoura)
-* ?? **LinkedIn:** [linkedin.com/in/marcelogmoura](https://www.linkedin.com/in/marcelogmoura/)
+* ğŸ“§ **Email:** [mgmoura@gmail.com](mailto:mgmoura@gmail.com) | [admin@allriders.com.br](mailto:admin@allriders.com.br)
+* ğŸ™ **GitHub:** [github.com/marcelogmoura](https://github.com/marcelogmoura)
+* ğŸ‘” **LinkedIn:** [linkedin.com/in/marcelogmoura](https://www.linkedin.com/in/marcelogmoura/)
