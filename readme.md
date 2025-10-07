@@ -13,7 +13,7 @@
 O enunciado original do desafio pode ser encontrado aqui:
 [**Desafio de Cálculo de CDB (PDF)**](./Pdf/DesafioCDB.pdf)
 
-## ✨ O frontend (Angular) do projeto se encontra 
+## ✨ O frontend (Angular) do projeto se encontra no link:
 
 [https://github.com/marcelogmoura/DesafioCDB_front](https://github.com/marcelogmoura/DesafioCDB_front)
 
@@ -129,7 +129,7 @@ As telas abaixo demonstram os request e response no swagger.
 
 A tela abaixo demonstra a interface simples, desenvolvida em Angular, que recebe o valor inicial e o prazo, e exibe os resultados Bruto e Líquido calculados pela Web API.
 
-![Demonstração do Cálculo de CDB](https://i.postimg.cc/yYHmPW5y/Screenshot-9.jpg)
+![Demonstração do Cálculo de CDB](https://i.postimg.cc/CKLqzQ1t/Screenshot-14.jpg)
 
 ---
 
